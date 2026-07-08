@@ -31,7 +31,7 @@ and get this project running.
 ## 1. Project Overview
 
 This application is a **CLI (Command Line Interface)** tool. That means
-there is no window with buttons to click — you interact with it entirely by
+there is no window with buttons to click - you interact with it entirely by
 typing in a terminal. You will be asked to:
 
 1. Enter a **source currency** (the currency you're converting *from*, e.g. `USD`)
@@ -41,7 +41,7 @@ typing in a terminal. You will be asked to:
 The app then calls a live currency exchange API over the internet and
 prints a neatly formatted table with the result.
 
-The codebase follows **Clean Architecture** principles — each file has a
+The codebase follows **Clean Architecture** principles - each file has a
 single, clear responsibility, making the project easy to read, test, and
 extend.
 
@@ -59,7 +59,7 @@ extend.
 - ✅ Graceful handling of invalid currencies (e.g. typing `XYZ`)
 - ✅ Graceful handling of API errors (bad key, quota exceeded, inactive account)
 - ✅ Graceful handling of network errors (no internet connection, timeout)
-- ✅ Configuration via environment variables (`.env` file) — no secrets hardcoded
+- ✅ Configuration via environment variables (`.env` file) - no secrets hardcoded
 - ✅ Fully typed with Python type hints
 - ✅ PEP 8 compliant, modular, object-oriented where appropriate
 
@@ -70,7 +70,7 @@ extend.
 ```
 currency-converter-cli/
 │
-├── main.py               # Entry point — CLI UI, input prompts, output rendering
+├── main.py               # Entry point - CLI UI, input prompts, output rendering
 ├── currency_service.py   # Handles all communication with the exchange rate API
 ├── config.py              # Loads and validates environment variables
 ├── utils.py                # Validation & formatting helper functions
@@ -117,7 +117,7 @@ This project requires **Python 3.12+**.
 
 **Check if Python is already installed:**
 
-Open a terminal (in VS Code: `Terminal` → `New Terminal`) and run:
+Open a terminal (in VS Code: `Terminal` -> `New Terminal`) and run:
 
 ```bash
 python --version
@@ -136,7 +136,7 @@ If you see something like `Python 3.12.x` or higher, you're good to go.
 - **Windows:** Download the installer from
   <https://www.python.org/downloads/windows/>.
   ⚠️ During installation, **check the box that says "Add python.exe to PATH"**
-  before clicking Install — this is the #1 cause of "python is not
+  before clicking Install - this is the #1 cause of "python is not
   recognized" errors later.
 - **macOS:** Download the installer from
   <https://www.python.org/downloads/macos/>, or if you use
@@ -163,20 +163,20 @@ If you want it anyway, download it from <https://git-scm.com/downloads>.
 
 ## 5. Step-by-Step Installation Guide
 
-### Step 1 — Open the project folder in VS Code
+### Step 1 - Open the project folder in VS Code
 
 1. Open Visual Studio Code
-2. Go to `File` → `Open Folder...`
+2. Go to `File` -> `Open Folder...`
 3. Select the `currency-converter-cli` folder
 4. Click **Select Folder**
 
-### Step 2 — Open a terminal inside VS Code
+### Step 2 - Open a terminal inside VS Code
 
-Go to the top menu: `Terminal` → `New Terminal`.
+Go to the top menu: `Terminal` -> `New Terminal`.
 A terminal panel will appear at the bottom of VS Code, already pointed at
 your project folder.
 
-### Step 3 — Create a virtual environment
+### Step 3 - Create a virtual environment
 
 A **virtual environment** is an isolated Python installation just for this
 project, so its dependencies don't clash with other projects on your
@@ -194,7 +194,7 @@ python3 -m venv venv
 
 This creates a new folder called `venv/` inside your project.
 
-### Step 4 — Activate the virtual environment
+### Step 4 - Activate the virtual environment
 
 You must **activate** the virtual environment every time you open a new
 terminal to work on this project.
@@ -223,10 +223,10 @@ You'll know it worked when you see `(venv)` appear at the start of your
 terminal prompt line.
 
 > 💡 **Tip:** VS Code often detects the `venv` folder automatically and
-> asks "Select Interpreter" — if a popup appears in the bottom-right
+> asks "Select Interpreter" - if a popup appears in the bottom-right
 > corner, click it and choose the interpreter located inside `venv`.
 
-### Step 5 — Install the dependencies
+### Step 5 - Install the dependencies
 
 With the virtual environment activated, run:
 
@@ -235,9 +235,9 @@ pip install -r requirements.txt
 ```
 
 This installs:
-- `requests` — for making HTTP calls to the exchange rate API
-- `python-dotenv` — for loading your `.env` configuration file
-- `rich` — for the colorful terminal output
+- `requests` - for making HTTP calls to the exchange rate API
+- `python-dotenv` - for loading your `.env` configuration file
+- `rich` - for the colorful terminal output
 
 You should see pip download and install each package with no errors.
 
@@ -251,11 +251,11 @@ which offers a free tier that's more than enough for personal projects.
 1. Go to <https://www.exchangerate-api.com/>
 2. Click **"Get Free Key"**
 3. Enter your email address and create a free account
-4. Verify your email address (check your inbox for a confirmation link —
+4. Verify your email address (check your inbox for a confirmation link -
    also check your Spam folder)
 5. Once logged in, you'll see your **API Key** on your account dashboard.
    It looks something like: `a1b2c3d4e5f6g7h8i9j0`
-6. Copy that key — you'll paste it into the `.env` file in the next step
+6. Copy that key - you'll paste it into the `.env` file in the next step
 
 > The free tier includes 1,500 requests per month, which is plenty for
 > learning and personal use.
@@ -267,7 +267,7 @@ which offers a free tier that's more than enough for personal projects.
 Your API key is a secret and should **never** be typed directly into the
 source code or committed to Git. Instead, it lives in a local `.env` file.
 
-### Step 1 — Create your `.env` file
+### Step 1 - Create your `.env` file
 
 In the VS Code terminal (from the project's root folder), run:
 
@@ -281,9 +281,9 @@ copy .env.example .env
 cp .env.example .env
 ```
 
-This creates a new file called `.env` — a copy of `.env.example`.
+This creates a new file called `.env` - a copy of `.env.example`.
 
-### Step 2 — Edit the `.env` file
+### Step 2 - Edit the `.env` file
 
 1. In the VS Code file explorer (left sidebar), click on the new `.env` file
 2. Replace `your_api_key_here` with the real API key you copied in Step 6
@@ -381,7 +381,7 @@ Please check your internet connection and try again.
 | PowerShell says script execution is disabled when activating venv | Windows execution policy blocks scripts | Run `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` in an admin PowerShell, then retry |
 | `(venv)` doesn't appear in the terminal after activation | You may have opened a *new* terminal after activating in a different one | Re-run the activation command in the current terminal (see Step 4 in Section 5) |
 | Currency code rejected before even calling the API | You typed something that isn't exactly 3 letters | Use standard 3-letter ISO codes: USD, EUR, GBP, JPY, INR, etc. |
-| App can't find `main.py` | Terminal isn't opened in the project folder | Run `cd path/to/currency-converter-cli` first, or reopen VS Code via `File → Open Folder` |
+| App can't find `main.py` | Terminal isn't opened in the project folder | Run `cd path/to/currency-converter-cli` first, or reopen VS Code via `File -> Open Folder` |
 
 If you're still stuck, try running with a fresh virtual environment:
 
