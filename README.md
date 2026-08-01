@@ -339,14 +339,14 @@ Enter the target currency code (e.g. USD): eur
 Enter the amount to convert: 100
 
                  Conversion Result
-╭──────────────────┬─────────────────────────╮
+╭────────────────────┬─────────────────────────╮
 │ Source Currency    │ USD                     │
-│ Target Currency     │ EUR                    │
-│ Amount                │ 100.00               │
-│ Exchange Rate           │ 0.921500           │
-│ Converted Amount         │ 92.15 EUR         │
-│ Last Updated               │ 2026-07-08 09:15:42 UTC │
-╰──────────────────┴─────────────────────────╯
+│ Target Currency    │ EUR                     │
+│ Amount             │ 100.00                  │
+│ Exchange Rate      │ 0.921500                │
+│ Converted Amount   │ 92.15 EUR               │
+│ Last Updated       │ 2026-07-08 09:15:42 UTC │
+╰────────────────────┴─────────────────────────╯
 ```
 
 ### Example: Invalid currency code
