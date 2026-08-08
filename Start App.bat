@@ -3,9 +3,9 @@ setlocal enabledelayedexpansion
 title Currency Converter CLI - Launcher
 cd /d "%~dp0"
 
-echo ==========================================================
-echo   Currency Converter CLI - Startup
-echo ==========================================================
+echo ==============================================================
+echo   Currency Converter CLI - Startup (Was made by Oleh Datsyk)
+echo ==============================================================
 echo.
 
 REM ----------------------------------------------------------

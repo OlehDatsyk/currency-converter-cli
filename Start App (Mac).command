@@ -10,9 +10,9 @@
 # Always run from the folder this script lives in
 cd "$(dirname "$0")" || exit 1
 
-echo "=========================================================="
-echo "  Currency Converter CLI - Startup"
-echo "=========================================================="
+echo "=============================================================="
+echo "  Currency Converter CLI - Startup (Was made by Oleh Datsyk)"
+echo "=============================================================="
 echo
 
 pause_and_exit() {
