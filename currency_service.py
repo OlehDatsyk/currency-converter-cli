@@ -5,7 +5,7 @@ Service layer responsible for talking to the exchange rate provider
 (ExchangeRate-API.com) and turning its responses into clean, typed
 Python objects.
 
-This module knows nothing about the terminal, Rich, or user input —
+This module knows nothing about the terminal, Rich, or user input -
 that separation of concerns is what makes it easy to test and easy to
 swap out for a different provider later.
 """

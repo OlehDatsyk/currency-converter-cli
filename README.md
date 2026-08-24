@@ -13,18 +13,32 @@ and get this project running.
 
 ## Table of Contents
 
-1. [Project Overview](#1-project-overview)
-2. [Features](#2-features)
-3. [Folder Structure](#3-folder-structure)
-4. [Prerequisites](#4-prerequisites)
-5. [Step-by-Step Installation Guide](#5-step-by-step-installation-guide)
-6. [Getting Your Free API Key](#6-getting-your-free-api-key)
-7. [Configuring the `.env` File](#7-configuring-the-env-file)
-8. [Running the Project in VS Code](#8-running-the-project-in-vs-code)
-9. [Example Terminal Output](#9-example-terminal-output)
-10. [Troubleshooting](#10-troubleshooting)
-11. [Future Improvements](#11-future-improvements)
-12. [License](#12-license)
+- [💱 Currency Converter CLI](#-currency-converter-cli)
+  - [Table of Contents](#table-of-contents)
+  - [1. Project Overview](#1-project-overview)
+  - [2. Features](#2-features)
+  - [3. Folder Structure](#3-folder-structure)
+  - [4. Prerequisites](#4-prerequisites)
+    - [4.1 Visual Studio Code](#41-visual-studio-code)
+    - [4.2 Python 3.12 or newer](#42-python-312-or-newer)
+    - [4.3 Git (optional)](#43-git-optional)
+  - [5. Step-by-Step Installation Guide](#5-step-by-step-installation-guide)
+    - [Step 1 - Open the project folder in VS Code](#step-1---open-the-project-folder-in-vs-code)
+    - [Step 2 - Open a terminal inside VS Code](#step-2---open-a-terminal-inside-vs-code)
+    - [Step 3 - Create a virtual environment](#step-3---create-a-virtual-environment)
+    - [Step 4 - Activate the virtual environment](#step-4---activate-the-virtual-environment)
+    - [Step 5 - Install the dependencies](#step-5---install-the-dependencies)
+  - [6. Getting Your Free API Key](#6-getting-your-free-api-key)
+  - [7. Configuring the `.env` File](#7-configuring-the-env-file)
+    - [Step 1 - Create your `.env` file](#step-1---create-your-env-file)
+    - [Step 2 - Edit the `.env` file](#step-2---edit-the-env-file)
+  - [8. Running the Project in VS Code](#8-running-the-project-in-vs-code)
+  - [9. Example Terminal Output](#9-example-terminal-output)
+    - [Example: Invalid currency code](#example-invalid-currency-code)
+    - [Example: No internet connection](#example-no-internet-connection)
+  - [10. Troubleshooting](#10-troubleshooting)
+  - [11. Future Improvements](#11-future-improvements)
+  - [12. License](#12-license)
 
 ---
 
@@ -70,14 +84,14 @@ extend.
 ```
 currency-converter-cli/
 │
-├── main.py               # Entry point - CLI UI, input prompts, output rendering
-├── currency_service.py   # Handles all communication with the exchange rate API
-├── config.py              # Loads and validates environment variables
-├── utils.py                # Validation & formatting helper functions
-├── requirements.txt        # Python dependencies
-├── .env.example            # Template for your environment variables
-├── .gitignore               # Files/folders Git should ignore
-└── README.md                 # You are here
+├── main.py # Entry point - CLI UI, input prompts, output rendering
+├── currency_service.py # Handles all communication with the exchange rate API
+├── config.py # Loads and validates environment variables
+├── utils.py # Validation & formatting helper functions
+├── requirements.txt # Python dependencies
+├── .env.example # Template for your environment variables
+├── .gitignore # Files/folders Git should ignore
+└── README.md # You are here
 ```
 
 **Why is it structured this way?**
@@ -330,9 +344,9 @@ amount. Follow the on-screen prompts.
 
 ```
 ╭──────────────────────────────────────────╮
-│ 💱  Currency Converter CLI                │
-│ Live exchange rates, right in your        │
-│ terminal                                  │
+│ 💱  Currency Converter CLI               │
+│ Live exchange rates, right in your       │
+│ terminal                                 │
 ╰──────────────────────────────────────────╯
 Enter the source currency code (e.g. USD): usd
 Enter the target currency code (e.g. USD): eur

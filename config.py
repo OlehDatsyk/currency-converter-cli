@@ -10,7 +10,7 @@ This module is responsible for:
       is missing, instead of letting the app crash later with a cryptic
       network/API error.
 
-No other module should read `os.environ` directly — everything should go
+No other module should read `os.environ` directly - everything should go
 through this module so configuration stays in one place.
 """
 
